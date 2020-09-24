@@ -13,7 +13,7 @@ const Categories = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
         console.log({category});
-      const matchedProducts = allProducts.filter(pd => pd.category.toLowerCase() ===category.toLowerCase());
+      const matchedProducts = allProducts.filter(pd => pd.category ===category.toLowerCase());
       setProducts(matchedProducts);
     }, [category])
 
