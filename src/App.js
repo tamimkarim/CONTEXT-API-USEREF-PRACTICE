@@ -8,12 +8,12 @@ export const CategoryContext = createContext();
 
 
 function App() {
-  const [count , setCount] = useState(0);
+  const [category , setCategory] = useState(0);
 
   return (
-    <CategoryContext.Provider value={count}>
-      <p>Count value : {count} </p>
-      <Header count={count} setCount={setCount}></Header>
+    <CategoryContext.Provider value={[category, setCategory]}>
+      <p>Count value : {category} </p>
+      <Header></Header>
       <Home></Home>
       <Shipment></Shipment>
 

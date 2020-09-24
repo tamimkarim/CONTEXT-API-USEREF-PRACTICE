@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { CategoryContext } from '../../App';
 
 const CategoryDetail = () => {
-    const category = useContext(CategoryContext)
+    const category = useContext(CategoryContext);
 
 
     return (
